@@ -9,7 +9,7 @@
     <script src="assets/js/includes.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
             integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-    <script src="assets/js/general.js"></script>
+    <script src="assets/js/about.js" defer></script>
 
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/navigation.css">
@@ -22,8 +22,8 @@
         <h1>About</h1>
         <hr>
     </header>
-    <div style="display: flex; gap: 1rem">
-        <div>
+    <main style="display: flex; gap: 1rem">
+        <section>
             <p>
                 Hello, my name is Petr, and I'm a 21-year-old computer science student. I have a passion for technology
                 and I love exploring and learning new things in the field.
@@ -31,7 +31,7 @@
             <p>
                 One of my biggest hobbies is homelabbing, which involves building and configuring my own servers and
                 networks at
-                home. I enjoy working with tools such as <b>Proxmox</b>, <b>Docker</b>, and <b>TrueNAS</b> to create
+                home. I enjoy working with tools such as <b>Proxmox</b>, <b><a href="#top7tools">Docker</a></b>, and <b>TrueNAS</b> to create
                 unique and
                 powerful computing
                 environments. It's a great way to test and learn new skills while building something useful for myself
@@ -52,11 +52,19 @@
                 If you're also into homelabbing or computer science, don't hesitate to drop me a message and we can
                 chat!
             </p>
-        </div>
-        <div>
+            <section style="margin-top: 1em;">
+                <h2>My TOP 7. most favorite tools</h2>
+                <ol id="top7tools"></ol>
+            </section>
+            <section style="margin-top: 1em;">
+                <h2>FAQ</h2>
+                <ul id="faq"></ul>
+            </section>
+        </section>
+        <section>
             <img src="assets/media/definetely-me-kekw.jpg" alt="Photo of me that you can't see" width="300">
-        </div>
-    </div>
+        </section>
+    </main>
 </div>
 <div data-include="footer"></div>
 </body>

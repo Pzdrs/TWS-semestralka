@@ -24,3 +24,63 @@ hr {
     height: 2px;
     margin: 1.5rem 0
 }
+
+ul.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 1rem 0;
+}
+
+ul.socials li a img {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+section.contact-form form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+section.contact-form textarea {
+    height: 150px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section.contact-form button[type="submit"]:hover {
+    background-color: #3e8e41;
+}

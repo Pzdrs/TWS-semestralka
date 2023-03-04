@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="assets/js/includes.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/navigation.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body>
+<div data-include="navigation"></div>
+<div class="container">
+    <header>
+        <h1>Contact</h1>
+        <hr>
+    </header>
+    <main style="text-align: center">
+        <p style="margin-bottom: 2rem;">Thank you for your interest in my services. I'm a computer science freelancer
+            and I'm happy to help with any
+            project you may have. Please use the contact form below to send me a message, and I will respond as soon as
+            possible.
+        </p>
+        <p>You can also reach me on the following social media platforms:</p>
+        <ul class="socials">
+            <li>
+                <a href="https://twitter.com/pycrs_">
+                    <img src="https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/twitter.png"
+                         alt="twitter">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/petrbohac3/">
+                    <img src="https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/linkedin.png"
+                         alt="linkedin">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/pzdrs/">
+                    <img src="https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/instagram.png"
+                         alt="instagram">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/pzdrs/">
+                    <img src="https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/facebook.png"
+                         alt="facebook">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/Pzdrs">
+                    <img src="https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/github.png"
+                         alt="github">
+                </a>
+            </li>
+        </ul>
+        <p>I regularly check my social media accounts, so feel free to connect with me there as well.</p>
+        <p>I look forward to hearing from you!</p>
+        <section class="contact-form" style="margin: 3rem 0">
+            <h2>Contact Form</h2>
+            <form style="margin-top: 1rem;">
+                <fieldset style="border: none">
+                    <legend>Please fill out the form below and click "Submit" to send me a message.</legend>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</div>
+<div data-include="footer"></div>
+</body>
+</html>
