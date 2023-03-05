@@ -9,6 +9,7 @@
     <script src="assets/js/includes.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
             integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="assets/js/contact_form.js" defer></script>
 
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/navigation.css">
@@ -64,7 +65,7 @@
         <p>I look forward to hearing from you!</p>
         <section class="contact-form" style="margin: 3rem 0">
             <h2>Contact Form</h2>
-            <form style="margin-top: 1rem;">
+            <form style="margin-top: 1rem;" onsubmit="return validate(this)">
                 <fieldset style="border: none">
                     <legend>Please fill out the form below and click "Submit" to send me a message.</legend>
                     <div class="form-group">
