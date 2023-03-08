@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
 
 /* General styles */
+:root {
+    --mobile-break: 768px;
+}
 
 * {
     margin: 0;
@@ -26,6 +29,26 @@ hr {
     height: 2px;
     margin: 1.5rem 0
 }
+
+video {
+    height: auto;
+    width: 65%;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 25px;
+    }
+
+    #about-wrapper {
+        text-align: center;
+    }
+
+    video {
+        width: 100%;
+    }
+}
+
 
 /* About socials icons styles */
 
@@ -151,12 +174,12 @@ a {
 
 /* unvisited link */
 a:link {
-    color: #4CAF50;
+    color: rebeccapurple;
 }
 
 /* visited link */
 a:visited {
-    color: #61635e;
+    color: #4CAF50;
 }
 
 /* selected link */
