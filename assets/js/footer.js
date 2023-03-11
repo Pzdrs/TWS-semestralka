@@ -5,7 +5,7 @@ const currentYearWrapper = document.querySelector('#current-year');
 currentYearWrapper.innerHTML = new Date().getFullYear().toString();
 
 navigator.geolocation.getCurrentPosition(position => {
-    fetch(`http://nominatim.openstreetmap.org/reverse?format=json&lat=${position.coords.latitude}&lon=${position.coords.longitude}&addressdetails=1`)
+    fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${position.coords.latitude}&lon=${position.coords.longitude}&addressdetails=1`)
         .then(response => response.json())
         .then(data => {
             locationWrapper.innerHTML = data.address.amenity || data.address.town || data.address.country
