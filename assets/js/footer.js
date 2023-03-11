@@ -8,9 +8,12 @@ navigator.geolocation.getCurrentPosition(position => {
     fetch(`http://nominatim.openstreetmap.org/reverse?format=json&lat=${position.coords.latitude}&lon=${position.coords.longitude}&addressdetails=1`)
         .then(response => response.json())
         .then(data => {
-            locationWrapper.innerHTML = data.address.amenity;
+            locationWrapper.innerHTML = data.address.amenity || data.address.town || data.address.country
         })
-        .catch(error => console.error(error));
+        .catch(error => {
+            console.error(error)
+            locationWrapper.innerHTML = 'Location not available';
+        });
 }, error => {
     locationWrapper.innerHTML = 'Location not available';
 });
